@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+      .imag{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .logo{
+          margin-top: 0%;
+          width: 6rem;
+          height: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero is-light is-fullheight">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar has-text-dark has-background-black ">
+      <div class="container">
+        <div class="navbar-brand">
+            <a href="BetaHealth.html"><img src="bet1.png" class="logo" alt=""></a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="BetaHealth.html" class="navbar-item">
+              Home
+            </a>
+            <a href="AboutUs.html" class="navbar-item is-active">
+              About us
+            </a>
+            <a href="contactus.html" class="navbar-item">
+                Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+   
+    
+    <div class="container is-fullwidth has-text-centered">
+      <img class="image is-5by1 imag" src="abt.jpeg" alt="Photo by Daniel Frank from Pexels">
+      <h1 class="title">
+        Who we are
+      </h1>
+      <div class="container subtitle">
+        BetaHealth is a mobile health care technology company that provides solutions to various health care challenges using modern technologies.
+        We believe everyone deserves access to proper health care and medical attention needed to live a health fulfilling life through our curated products.
+        </div>
+    </div>
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <!--<nav class="tabs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a>Overview</a></li>
+          <li><a>Modifiers</a></li>
+          <li><a>Grid</a></li>
+          <li><a>Elements</a></li>
+          <li><a>Components</a></li>
+          <li><a>Layout</a></li>
+        </ul>
+      </div>
+    </nav>-->
+  </div>
+  <script>
+      (function(){
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>   
+</body>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        .bg{
+            background: linear-gradient(rgba(18, 41, 0, 0.3), rgba(18, 41, 0, 0.3)), url('wide.jpeg') no-repeat center; 
+            background-size: cover;
+        }
+        .logo{
+          margin-top: 0%;
+          width: 6rem;
+          height: 3rem;
+        }
+    </style>
+</head>
+<body>
+<section class="bg hero is-primary is-fullheight">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="BetaHealth.html"><img src="bet1.png" class="logo" alt=""></a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="BetaHealth.html" class="navbar-item is-active">
+              Home
+            </a>
+            <a href="AboutUs.html" class="navbar-item">
+              About us
+            </a>
+            <a href="contactus.html" class="navbar-item">
+                Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container is-small-mobile has-text-centered">
+      <h1 class="title">
+        Merging medical practice and technology to provide solutions to healthcare challenges in Africa
+      </h1>
+      <div class="subtitle">
+        we bring healthcare to the fingertips of Africans, guiding them to wellness and empowering them to reach their full potential
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <!--<nav class="tabs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a>Overview</a></li>
+          <li><a>Modifiers</a></li>
+          <li><a>Grid</a></li>
+          <li><a>Elements</a></li>
+          <li><a>Components</a></li>
+          <li><a>Layout</a></li>
+        </ul>
+      </div>
+    </nav>-->
+  </div>
+</section>
+<section class="prod hero is-dark">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title has-text-centered">Our Products</h1>
+            <div class="columns">
+                <div class="column">
+                        <div class="card">
+                                <div class="card-image">
+                                  <figure class="image is-4by3">
+                                    <img src="bsm.png" alt="Placeholder image">
+                                  </figure>
+                                </div>
+                                <div class="card-content">
+                                  <div class="media">
+                                    <div class="media-left">
+                                      <figure class="image is-48x48">
+                                        <img src="bsm.png" alt="Placeholder image">
+                                      </figure>
+                                    </div>
+                                    <div class="media-content">
+                                      <p class="title is-4">Bossom Heart</p>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="content">
+                                    Bossom Heart is a <strong>mobile-first</strong>
+                                    health support system that provides supportive health support to patients suffering from breast and cervical cancer.
+                                  </div>
+                                </div>
+                              </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="AFIYA.jpg" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img src="AFIYA.jpg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Afiya</p>
+                            </div>
+                          </div>
+                      
+                          <div class="content">
+                            Afiya is a health solution that connects users to a vibrant community and to proffessional help
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    (function(){
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#'+burger.dataset.target);
+
+      burger.addEventListener('click', function(){
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+  </script>   
+</body>
+</html>
